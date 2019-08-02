@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="talha.com.bd.patha_shathi">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Large"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activities.StartAppActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.UserAuthenticationActivity" />
+        <activity android:name=".activities.UserRegisterActivity" />
+        <activity android:name=".activities.UserLoginActivity" />
+        <activity android:name=".activities.MyPathasathis" />
+        <activity android:name=".activities.AvailablePsActivity" />
+        <activity android:name=".activities.HarassmentActivity" />
+        <activity android:name=".activities.UserImageCaptureActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+
+</manifest>
